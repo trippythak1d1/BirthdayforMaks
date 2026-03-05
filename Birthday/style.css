@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 390px;
+    height: 834px;
+    background-image: url(img/bg.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 67px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 37px;
+}
+.date {
+    color: white;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 11px;
+}
+
+section {
+    position: absolute;
+    display: grid;
+    align-content: space-between;
+    width: 100%;
+    /* height: 95%; */
+    top: 5%;
+    box-sizing: border-box;
+    background: rgba(85, 85, 85, 0.29);
+    border: 1px solid #BFBFBF;
+    border-radius: 25px 25px 40px 40px;
+
+}
+
+.description-navigate {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.to {
+    color: white;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cover {
+    display: flex;  
+    justify-content: center;
+    padding-bottom: 3px;
+} 
+
+.timeline-music {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description-music {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 21px;
+
+}
+.description-music p {
+    color: #FFFFFF;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+} 
+
+.eclipse {
+    background: #232323;
+    box-shadow: 6px 6px 16px rgba(15, 15, 15, 0.3), -6px -6px 16px rgba(58, 58, 58, 0.3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.play-music {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 91px;
+}
+.bar {
+    display: grid; 
+    align-content: space-between;
+    height: 196px;
+}
+.start-music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.start {
+    display: flex;
+    align-items: center;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.shadow {
+    position: absolute;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 68.75%);
+    border-radius: 37px;
+    transform: rotate(180deg);
+    height: 402px;
+    width: 100%;
+    top: 52%;
+    z-index: 1;
+}
+.description-navigate,
+.cover,
+.timeline-music,
+.description-music,
+.play-music {
+  position: relative;
+  z-index: 5;  /* любое значение > z-index тени */
+}
